@@ -22,9 +22,22 @@
     <div class="hero-text">
       <h1>Akhilesh <span>Kanagali</span></h1>
       <p>A Computer Science Engineering student with passion for Software Engineering and Game Development.</p>
-      <a href="resume.pdf" download class="download-btn">Download Resume</a>
+      <a href="resume.pdf" download class="download-btn" id="downloadLink">Download Resume</a>
     </div>
   </section>
+
+  <script>
+    document.getElementById("downloadLink").addEventListener("click", function(event) {
+      event.preventDefault();
+  
+      const userConfirmed = confirm("The following link contains resume. Do you want to download it?");
+      
+      if (userConfirmed) {
+        // Proceed with the download
+        window.location.href = this.href;
+      }
+    });
+  </script>
 
   <section class="about" id="about" style="justify-content: center; text-align: center;">
     <div class="about-text">
@@ -60,7 +73,7 @@
       <div class="project-card">
         <img src="work2.png" alt="Work 2">
         <h1>Top-Down RPG</h1>
-        <p>This is a simple top-down rpg made wth Unity. Consists of player, objects, enemies, physics and colissions</p>
+        <p>This is a simple top-down rpg made wth Unity using C#. Consists of player, objects, enemies, physics and colissions</p>
         <a href="https://github.com/akiru-91/TopDown-RPG" target="_blank">View Repository</a>
       </div>
       <div class="project-card">
@@ -77,13 +90,22 @@
       <span class="white-text">CONTACT</span> <span class="blue-text">ME</span>
     </h2>
     <p>You can reach out to me through the following platforms:</p>
-    <p>Email: <a href="mailto:akhileshkanagali3@gmail.com">akhileshkanagali3@gmail.com</a></p>
-    <div class="social-icons" style="margin-top: 1rem;">
-        <a href="https://discord.com/users/1288198041270222922"><i class="fab fa-discord"></i></a>
-        <a href="https://www.linkedin.com/in/akiru091"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/akhil_k06"><i class="fab fa-twitter"></i></a>  
+    <p>Email: <a href="mailto:akhileshkanagali3@gmail.com" style="text-decoration: none;">akhileshkanagali3@gmail.com</a></p>
+    <div class="social-icons" style="margin-top: 1rem; font-size: 2rem;">
+      <a href="https://discord.com/users/1288198041270222922" style="color: #5865F2; margin: 0 10px; text-decoration: none;">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/akiru091" style="color: #0A66C2; margin: 0 10px; text-decoration: none;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/akhil_k06" style="color: #1DA1F2; margin: 0 10px; text-decoration: none;">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/akiru-91" style="color: #333; margin: 0 10px; text-decoration: none;">
+        <i class="fab fa-github"></i>
+      </a>
     </div>
-  </section>
-  
+  </section>  
+
 </body>
 </html>
