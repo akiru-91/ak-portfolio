@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AK</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero" style="justify-content: center; text-align: center;">
+    <div class="hero-text">
+      <h1>Akhilesh <span>Kanagali</span></h1>
+      <p>A Computer Science Engineering student with passion for Software Engineering and Game Development.</p>
+      <a href="resume.pdf" download class="download-btn">Download Resume</a>
+    </div>
+  </section>
+
+  <section class="about" id="about" style="justify-content: center; text-align: center;">
+    <div class="about-text">
+      <h2>ABOUT <span>ME</span></h2>
+      <p>I'm Akhilesh Kanagali a Computer Science Engineering student with passion for Software Engineering and Game Development. I love bringing ideas to life through code, whether it's building useful apps or creating engaging gameplay experiences.</p>
+      <p>I enjoy playing and building games, also like to code programs to learn and grow my knowledge. Right now, I'm honing my skills in C#, Python and Godot.</p>
+      <p>Outside of coding, you'll probably find me gaming, exploring new tools or expressing creativity through drawing and visual art.</p>
+    </div>
+  </section>
+
+  <section class="skills" id="skills" style="justify-content: center; text-align: center; padding: 4rem 1rem;">
+    <h2 style="font-size: 2rem; font-weight: 700;"><span class="white-text">MY</span> <span class="blue-text">SKILLS</span></h2>
+    <div class="skills-list" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 2rem;">
+      <div class="skill-card">C/C++</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">C#</div>
+      <div class="skill-card">HTML/CSS</div>
+      <div class="skill-card">Godot</div>
+      <div class="skill-card">Git & GitHub</div>
+    </div>
+  </section>
+
+
+  <section class="portfolio" id="portfolio">
+    <h2>MY <span>PROJECTS</span></h2>
+    <div class="portfolio-gallery">
+      <div class="project-card">
+        <img src="work1.png" alt="Work 1">
+        <h1>Network Tracker</h1>
+        <p>A simple cybersecurity program to display network lines on google maps using python,wireshark and kml.</p>
+        <a href="https://github.com/akiru-91/Network-Tracking" target="_blank">View Repository</a>
+      </div>
+      <div class="project-card">
+        <img src="work2.png" alt="Work 2">
+        <h1>Top-Down RPG</h1>
+        <p>This is a simple top-down rpg made wth Unity. Consists of player, objects, enemies, physics and colissions</p>
+        <a href="https://github.com/akiru-91/TopDown-RPG" target="_blank">View Repository</a>
+      </div>
+      <div class="project-card">
+        <img src="work3.png" alt="Work 3">
+        <h1>Resume Builder</h1>
+        <p>A resume builder application. Containerized using docker and deployed with k8s</p>
+        <a href="https://github.com/akiru-91/resume-builder" target="_blank">View Repository</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact" style="text-align: center; padding: 4rem 1rem;">
+    <h2 style="font-size: 2rem; font-weight: 700;">
+      <span class="white-text">CONTACT</span> <span class="blue-text">ME</span>
+    </h2>
+    <p>You can reach out to me through the following platforms:</p>
+    <p>Email: <a href="mailto:akhileshkanagali3@gmail.com">akhileshkanagali3@gmail.com</a></p>
+    <div class="social-icons" style="margin-top: 1rem;">
+        <a href="https://discord.com/users/1288198041270222922"><i class="fab fa-discord"></i></a>
+        <a href="https://www.linkedin.com/in/akiru091"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/akhil_k06"><i class="fab fa-twitter"></i></a>  
+    </div>
+  </section>
+  
+</body>
+</html>
